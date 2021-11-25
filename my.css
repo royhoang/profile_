@@ -1,0 +1,387 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#main{
+
+}
+.clear{
+    clear:both;
+}
+.text-white{
+    color:white !important;
+}
+.text-black{
+    background-color:black !important;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-color:black;
+    z-index: 1;
+}
+#nav{
+    display: inline-block;
+}
+#nav .subnav{
+list-style-type: none;
+}
+#nav > li{
+    display: inline-block;
+}
+
+/* co the thay the inline block = block*/
+#nav li{
+    /*display:inline-block;*/
+    position: relative;
+}
+#nav > li > a{
+    color: white;
+    text-transform: uppercase;
+}
+#nav li a{
+ text-decoration: none;
+ line-height: 50px;
+ padding: 0 25px;
+ /*display:inline-block;*/
+ display:block;
+}
+#nav .subnav li:hover a,
+#nav > li:hover > a{
+    background-color:#ccc;
+    color:black;
+}
+/* hien thi cai thanh menu */
+#nav li:hover .subnav{
+    display: block;
+}
+#nav .subnav{
+    display: none;
+   position: absolute;
+     min-width: 160px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0,0,0.3);
+}
+#nav .subnav a{
+    color: black;
+    /*width: 160px;*/
+    /*co the thay the inline block va block de hover toan man hinh*/
+
+}
+#nav .nav-arrow-down{
+font-size:10px;
+
+
+}
+#header .search-btn{
+    float:right;
+    
+
+}
+#header .search-btn:hover{
+    background-color:tomato;
+    cursor: pointer;
+}
+#header .search-icon{
+color:white;
+line-height: 50px;
+font-size: 20px;
+padding: 0 40px;
+}
+
+#slider{
+    margin-top: 50px;
+    padding-top: 50%;
+    background: url('/Web 3 band/assets/css/img/anhchill1.png') top center/ cover no-repeat;
+position: relative
+}
+
+#slider .text-content{
+position: absolute;
+bottom: 25px;
+color:white;
+width: 100%;
+text-align: center;
+}
+#slider .text-heading{
+letter-spacing: 10px;
+font-weight: 500;
+}
+#slider .text-description{
+margin-top: 10px;
+}
+
+#content{
+/* About Me */
+}
+#content .content-section{
+width: 1000px;
+margin-left: auto;
+margin-right: auto;
+padding: 64px;
+}
+#content .section-heading{
+text-align: center;
+font-weight: 500;
+letter-spacing: 4px;
+}
+
+#content .section-heading:hover {
+    color:tomato !important
+}
+#content .section-sub-text{
+text-align: center;
+margin-top: 25px;
+font-style: italic;
+opacity: 0.6;
+}
+#content .about-text{
+margin-top: 25px;
+text-align: justify;
+line-height: 1.4;
+}
+#content .member-list{
+text-align: center;
+
+}
+#content .member-name{
+font-size: 15px;
+}
+#content .member-img{
+margin-top: 20px;
+width: 169px;
+}
+/*Hobby*/
+
+#content .content-hobby{
+    text-align: center;
+    background: #8bd3f5;
+    position: relative;
+    
+}
+#content .section-name-hobby{
+    margin-top:20px;
+}
+#content .section-sub-text-hobby{
+    margin-top: 14px;   
+}
+#content .content-body-hobby{
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    text
+}
+
+#content .hobby-img{
+ width: 150px;
+ border-radius: 50%;
+-webkit-border-radius: 50%;
+margin-top: 16px;
+}
+    
+#content .content-body-sub-hobby{
+  float:left;
+  width: 50%;
+  padding: 100px;
+ }
+ #content .text-list{
+     padding-bottom:20px;
+     margin-top: 30px;
+ }
+ #content .body-heading-name{
+     font-style: italic;
+ }
+
+/* Historia web */
+#content .content-historia{
+    background-color: pink;
+}
+#content .about-text-historia{
+    margin-top: 15px;
+    line-height: 1.6;
+  border-bottom: 1px solid black ;
+  padding-bottom: 25px;
+}
+#content .section-footer{
+    color:black;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 500;
+}
+#content .historia-web-img{
+
+    width: 100%;
+    padding: 15px 0;
+    border-bottom: 1px solid black ;
+}
+/*Music list */
+#content .content-music{
+    background-color: black;
+}
+#content .content-section-music{
+ 
+    
+}
+
+#content .about-text-music{
+    margin-top: 15px;
+    line-height: 1.6;
+}
+.music-list{
+    margin-top: 32px;
+    margin-right: -8px;
+    margin-left: -8px;
+}
+.music-item{
+float:left;
+width: 33,33333%;
+width: 280px;
+padding: 0 8px;
+
+}
+.music-img{
+width: 100%;
+display: block;
+}
+.music-img:hover{
+opacity: 0.6;
+}
+.muisc-body{
+    padding: 16px;
+  
+background-color: white;
+
+}
+.music-heading{
+  font-size: 15px;
+  font-weight: 600;
+}
+.music-time{
+margin-top: 15px;
+color:#757575;
+}
+.music-desc{
+ margin-top: 15px;
+line-height: 1.4;
+}
+.music-watch-btn{
+    color: #fff;
+    background-color: #000;
+    padding: 10px 14px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+.music-watch-btn:hover{
+    color:#000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+
+
+
+#footer{
+
+}
+/*Let me down slowly*/
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0 ,0.7);
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    display: none;
+}
+.modal-container {
+    background-color: rgba(0, 0, 0 ,0.4);
+    color: white;
+    width: 900px;
+    min-height: 200px;  
+    position: relative;
+max-width: calc(100%-36px);
+animation: modalFadeIn ease 0.4s;
+}
+.modal-header {
+    align-items: center;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+
+}
+.modal-heading-youtube {
+    padding: 11px 16px;
+    background: white;
+    color: black;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+.modal-close{
+    position: absolute;
+    right: 0;
+    padding: 16px;
+}
+.modal-close:hover{
+    color:red;
+    cursor: pointer;
+    background: #fff;
+}
+.modal-video{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.modal.open{
+    display: flex;
+}
+/* SoFar*/
+.modal-sofar.open{
+    display: flex ;
+}
+.modal-video-sofar{
+    text-align: center;
+}
+.modal-body-sofar{
+    padding-bottom: 20px;
+}
+.modal-header-sofar{
+ letter-spacing: 10px;   
+}
+.modal-heading-sofar{
+    padding-left: 25px;
+}
+/*Symphony*/
+.modal-symphony.open{
+display: flex;
+}
+.modal-body-symphony{
+    padding-bottom: 20px;
+}
+.modal-header-symphony{
+    letter-spacing: 10px;
+}
+.modal-heading-symphony{
+    padding-left: 25px;
+}
+.modal-video-symphony{
+    text-align: center;
+}
+@keyframes modalFadeIn {
+from { 
+    transform: translateY(-100px);
+    }
+to {
+transform: translateY(0);
+    }
+}

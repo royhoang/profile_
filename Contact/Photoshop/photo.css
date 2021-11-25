@@ -1,0 +1,128 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#main{
+
+}
+#header{
+    height: 50px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left:0;
+    z-index: 1;
+    
+}
+#nav{
+
+}
+#nav li{
+      
+      list-style: none;
+      position: relative;
+}
+#nav > li{
+    display:inline-block;
+   
+}
+#nav >li >a{
+     text-transform: uppercase;
+}
+#nav li a{
+    display: block;
+    line-height: 50px;
+    font-size:20px;
+
+    text-decoration: none;
+    padding: 0 30px;
+    color:white;
+    
+}
+#nav > li:hover > a{
+   background-color:#ccc;
+   color:black;
+
+}
+#nav .subnav{
+   position: absolute;
+   display: none;
+   box-shadow: 0 0 10px rgba(0,0,0,0.3);
+   background: white;;
+}
+#nav li:hover .subnav{
+    display: block;
+}
+#nav .subnav a{
+color:black;
+
+}
+#nav .subnav li:hover a{
+    background-color: #ccc;
+    color:black;
+}
+.nav-arrow-down{
+    font-size: 10px;
+}
+
+.box img{
+    width: 400px;
+    height: 400px   ;
+}
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+}
+.box{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: animate 20s linear infinite;
+}
+@keyframes animate{
+ 0%{
+        transform:  perspective(1000px) rotateY(0deg);
+ }
+ 100%{
+    transform:  perspective(1000px) rotateY(360deg);
+}
+ 
+}
+.box span{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+    -webkit-box-reflect: below 0px linear-gradient(transparent, transparent,#0004 );
+}
+.box span img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.title-name {
+    position: absolute;
+    top: 365px;
+    color:gold;
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(255, 215,0,1);
+}

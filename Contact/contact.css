@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.clear{
+    clear: both;
+}
+
+
+#header{
+height: 50px;
+background-color: black ;
+position: fixed;
+top: 0;
+right: 0;
+left: 0;
+
+}
+
+#nav > li{
+display: inline-block;
+}
+#nav li{
+ list-style-type: none;
+    position: relative;
+}
+#nav .subnav{
+    display:none;
+   position: absolute;
+   background-color: #fff;
+   box-shadow: 0 0 10px rgba(0,0,0,0.3);
+   min-width: 160px;
+ 
+}
+#nav .subnav a{
+    color:#000;
+   
+    
+}
+#nav li a {
+    
+    text-decoration: none;
+    line-height: 50px;
+    font-size: 20px;
+    padding: 0 30px;
+    display: block;
+}
+#nav > li > a{
+    color: white;
+    text-transform: uppercase;
+}
+#nav li:hover .subnav{
+    display: block;
+}
+#nav .subnav li:hover a,
+#nav > li:hover >a{ 
+    color:black;
+    background-color: #ccc;
+}
+#nav .nav-arrow-down{
+    font-size: 10px;
+}
+/*Contact*/
+#contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e91e63;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+}
+#contact .contact-form{
+    background: #283593;
+    width: 800px;
+    min-height: 300px;
+    box-shadow: 20px 20px 50px 10px;
+    margin-top: 10px;
+    animation: modalFadeIn ease 0.4s;
+}
+.contact-heading {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color:white;
+}
+#contact .contact-comment{
+    margin-left: 10px;
+    font-size: 31px;
+}
+#contact .contact-body{
+    padding:40px;
+    color:white;
+}
+#contact .contact-label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+#contact .form-control {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    margin-bottom: 30px;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ddd;
+}
+
+#contact .send-icon{
+   position: absolute;
+   margin-top: 1px;
+   margin-left: 3px;
+}
+#contact .send-text-btn{
+background-color: #18ffff;
+border: none;
+padding: 9px 47px 9px 40px;
+margin-left: 300px;
+border-radius: 20px;  
+position: relative;
+}
+input{
+    color:white;
+}
+#contact .send-text-btn:hover{
+    background-color:#ccc;
+    cursor: pointer;
+    
+}
+ .socialmediaicons li {
+    list-style-type: none;
+
+}
+.socialmediaicons li  a{
+   float: left;
+   margin-right: 30px;
+   text-decoration: none;
+   font-size: 30px;
+}
+#contact .icon-facebook-contact{
+     color:rgb(24, 155, 231);
+}
+#contact .socialmediaicons li:hover a{
+    color:#ccc;
+   opacity: 0.5;
+}
+#contact .icon-instagram-contact{
+color:yellow;
+}
+#contact .icon-github-contact{
+color:black;
+}
+#contact .icon-twitter-contact{
+color:blue;
+}
+
+@keyframes modalFadeIn {
+    from { 
+        transform: translateY(-100px);
+        }
+    to {
+    transform: translateY(0);
+        }
+    }
+
+

@@ -1,0 +1,39 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.slide{
+    /* lay chieu rong cua cai nay ne */
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+ 
+} 
+.chuyenslide{
+ /* khung trong silde */
+    width: 9999px;
+    margin-top: 100px;
+   transition: all 1s;
+
+}
+.chuyenslide img{
+    width: 250px;
+    height: 90px;
+    float:left
+    
+}
+/* mui ten de khi click vao chuyen slide */
+.dieuhuong{
+position: absolute;
+    font-size: 50px;
+    color:antiquewhite;
+     top: 18%;
+     display: none;
+}
+.dieuhuong i:last-child{
+position: relative;
+left: 950px;
+}
+.slide:hover .dieuhuong{
+    display: block;
+}

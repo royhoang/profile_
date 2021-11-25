@@ -1,0 +1,35 @@
+
+.box {
+    width: calc(120px + 20%) ;
+    height: 100px;
+    background-color: rgb(119, 27, 27)
+
+}
+.box:active{
+    color:blue;
+    background-color: red;
+
+}
+.box::before{
+    content: "xin chao";
+    color: white;
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(10, 9, 9);
+}
+
+h1::first-letter{
+    color:blue;
+}
+h1 { 
+    color: green
+}
+h1:hover{
+    color: red;
+}
+
+
+a::after{
+    content: "(" attr(href)")";
+}

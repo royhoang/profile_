@@ -1,0 +1,26 @@
+.box{
+    width: 60px;
+    height: 60px ;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    border-radius: 1px;
+    
+}
+.box1 {
+    background-color: chocolate;
+    margin-left: 20px;
+}
+.box2 {
+    background-color: crimson;
+    margin-left: 50px;
+}
+.box3{ 
+background-color: darkcyan;
+padding: 10px;
+border: 10px solid;
+border-color: gray;
+margin: 20px;
+}

@@ -99,16 +99,19 @@ padding: 0 40px;
 #slider{
     margin-top: 50px;
     padding-top: 50%;
-    background: url('/Web 3 band/assets/css/img/anhchill1.png') top center/ cover no-repeat;
-position: relative
+    background: url('/profile_/img/Cat.png') top center/ cover no-repeat;
+position: relative;
+width: 100vw;
+height: 100vw;
 }
 
 #slider .text-content{
 position: absolute;
 bottom: 25px;
-color:white;
+color:purple;
 width: 100%;
 text-align: center;
+font-weight: bold;
 }
 #slider .text-heading{
 letter-spacing: 10px;
@@ -177,7 +180,7 @@ width: 169px;
     right: 0;
     left: 0;
     bottom: 0;
-    text
+
 }
 
 #content .hobby-img{
